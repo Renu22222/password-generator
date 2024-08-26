@@ -1,0 +1,116 @@
+:root {
+    --background-color: #f0f0f0;
+    --text-color: #000;
+    --button-bg-color: white;
+    --button-hover-bg-color: #0056b3;
+    --input-bg-color: #fff;
+}
+
+body.dark {
+    --background-color: #333;
+    --text-color: #fff;
+    --button-bg-color: #555;
+    --button-hover-bg-color: #777;
+    --input-bg-color: #444;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#theme-switcher {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: var(--button-bg-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#theme-switcher:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+.container {
+    text-align: center;
+    background-color: var(--input-bg-color);
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.controls {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.controls label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#length {
+    width: 60px;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.generator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#password {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: var(--input-bg-color);
+    color: var(--text-color);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--button-bg-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg-color);
+}
